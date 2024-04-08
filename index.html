@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bí ẩn Phòng Thoát Hiểm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bí ẩn Phòng Thoát Hiểm</h1>
+            <img src="escape_room_header.jpg" alt="Escape Room Header">
+        </div>
+        <div class="content">
+            <img src="escape_room_image.jpg" alt="Escape Room Image" class="escape-room-image">
+            <div class="game">
+                <p>Nhập một số từ 1 đến 100:</p>
+                <input type="number" id="guess" min="1" max="100">
+                <button onclick="checkGuess()">Kiểm tra</button>
+                <button onclick="giveHint()">Gợi ý</button>
+                <p id="message"></p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="correctSound">
+        <source src="correct.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wrongSound">
+        <source src="wrong.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
